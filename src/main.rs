@@ -1,3 +1,5 @@
+
+
 fn main() {
     let mut counter = 0;
     let result = loop {
@@ -7,5 +9,17 @@ fn main() {
             break counter*2;
         }
     };
-    print!("Результат равен: {}", result);
+    print!("Результат равен: {} \n", result);
+    
+    loop_while();
 }
+
+
+fn loop_while(){
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+    while index < 5 {
+        print!("Значение массива: {} \n", a[index]);
+        index += 1;
+        }
+    }
