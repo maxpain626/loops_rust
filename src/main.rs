@@ -12,12 +12,20 @@ fn main() {
     print!("Результат равен: {} \n", result);
     
     loop_while();
+    loop_rev();
 }
 
 
-fn loop_while(){
+fn loop_while() {
     let a = [10, 20, 30, 40, 50];
     for element in a.iter() {
-        print!("Значение массива: {} \n", element);
+        println!("Значение массива: {} \n", element);
     }
+}
+
+fn loop_rev() {
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("Поехали!");
 }
