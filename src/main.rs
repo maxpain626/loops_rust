@@ -17,9 +17,7 @@ fn main() {
 
 fn loop_while(){
     let a = [10, 20, 30, 40, 50];
-    let mut index = 0;
-    while index < 5 {
-        print!("Значение массива: {} \n", a[index]);
-        index += 1;
-        }
+    for element in a.iter() {
+        print!("Значение массива: {} \n", element);
     }
+}
